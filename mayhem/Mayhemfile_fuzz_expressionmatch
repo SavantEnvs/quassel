@@ -1,0 +1,11 @@
+project: savantenvs/quassel
+target: fuzz_expressionmatch
+
+cmds:
+  - cmd: /mayhem/fuzz_expressionmatch
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_expressionmatch/testsuite

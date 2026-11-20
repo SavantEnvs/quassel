@@ -1,0 +1,5 @@
+# Build context for mayhem/Dockerfile: the FULL repo incl. .git (the grader uses the history);
+# only local build directories (created by mayhem/build.sh) are pruned.
+build-fuzz/
+build-tests/
+ctrf-report.json
